@@ -1,0 +1,73 @@
+#pie {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    background-color: #908171;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Mukta";
+}
+
+#pie a {
+    text-align: left;
+}
+
+.telefono img,
+.mail img,
+.redes img {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+}
+
+#sectionfoot1 {
+    text-align: center;
+}
+
+#sectionfoot1 h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#sectionfoot2 {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.telefono,
+.mail {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #pie a img {
+        width: 110px;
+        height: 110px;
+    }
+
+    #pie ul li img {
+        width: 40px;
+        height: 40px;
+        padding: 2px;
+        padding-left: 2px;
+    }
+
+    #pie .telefono img,
+    #pie .mail img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.redes {
+    display: flex;
+    justify-self: space-evenly;
+    margin-right: 10px;
+}
+
+.redes li {
+    list-style-type: none;
+}
