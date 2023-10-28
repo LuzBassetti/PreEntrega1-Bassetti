@@ -5,9 +5,9 @@ const CartWidget = () => {
   return (
     <div className='cart-icon MuiBox-root css-3cyd2n'>
       <a id="cartLogo" href="/cart"><img src={cart}  height="35px" width="35px" alt="carrito de compras"/></a>
-      <span class="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">
+      <span className="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">
       0
-      <span class="visually-hidden">unread messages</span>
+      <span className="visually-hidden">unread messages</span>
       </span>
       {/* <a href='/cart'> 
         <button class="MultiButtonBase-root MuiIconButton-root MuiIconButton-sixeMedium css-1afvmso" tabIndex="0" type='button' aria-label='cart'>

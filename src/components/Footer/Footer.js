@@ -11,7 +11,7 @@ const Footer = () => {
 
         <section id="sectionfoot1">
           <h3>Nuestras Redes</h3>
-          <ul class="redes">
+          <ul className="redes">
             <li>
               <a href="https://www.instagram.com/pasteleriaydecoracion/" target="_blank"><img
                 src={Images.instagram} alt="Instagram" /></a>
@@ -27,11 +27,11 @@ const Footer = () => {
           </ul>
         </section>
         <section id="sectionfoot2">
-          <div class="telefono">
+          <div className="telefono">
             <img src={Images.phonecall} alt="Telefono" />
             <p>3415889586</p>
           </div>
-          <div class="mail">
+          <div className="mail">
             <a href="mailto:giovanonsilvinamariel@gmail.com"><img src={Images.envelope} alt="Email" /></a>
             <a href="mailto:giovanonsilvinamariel@gmail.com">Email</a>
           </div>
