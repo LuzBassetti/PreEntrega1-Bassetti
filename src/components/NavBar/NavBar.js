@@ -1,7 +1,8 @@
-import React from 'react'
-import CartWidget from '../CartWidget/CartWidget'
-import logo from '../../assets/logorecortado.png'
-import './NavBar.css'
+import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
+import logo from '../../assets/logorecortado.png';
+import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -9,10 +10,10 @@ const NavBar = () => {
       <header>
         {/* Barra de navegacion DESKTOP*/}
         <nav className="navdesktop">
-          <a className="logoNav" href="index.html"><img src={logo} width="120" height="120"
-            alt="Imagen de logo" /></a>
+          <Link className="logoNav" to="/"><img src={logo} width="120" height="120"
+            alt="Imagen de logo"/></Link>
           <ul className="navMenu">
-            <li>
+            {/* <li>
               <div className="dropdown dropmenu">
                 <a className="btn btn-secondary dropdown-toggle prodboton" href="./pages/productos.html"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -28,10 +29,11 @@ const NavBar = () => {
                   <li><a className="dropdown-item" href="./pages/productos.html#md">Mesas Dulces</a></li>
                 </ul>
               </div>
-            </li>
-            <li> <a href="./pages/historia.html">Historia</a> </li>
-            <li> <a href="./pages/comohacerpedido.html">Como hacer <br /> mi pedido?</a> </li>
-            <li> <a href="./pages/contacto.html">Contacto</a> </li>
+            </li> */}
+            <li> <Link to="/category/chocotorta">Chocotorta</Link> </li>
+            <li> <Link to="/category/cheesecake">Cheesecake</Link> </li>
+            <li> <Link to="/category/lemonpie">Lemon Pie</Link> </li>
+            <li> <Link to="/category/rogel">Rogel</Link> </li>
           </ul>
           <div className="navCart">
           <CartWidget />
@@ -43,8 +45,8 @@ const NavBar = () => {
         {/* <!-- Barra navegacion MOBILE --> */}
         <nav className="navbar navbar-expand-lg bg-body-tertiary navmobile">
           <div className="container-fluid">
-            <a className="navbar-brand" href="index.html"><img src={logo} width="120" height="120"
-              alt="Imagen de Logo Pasteleria y Decoracion" /></a>
+            <Link className="navbar-brand" to="index.html"><img src={logo} width="120" height="120"
+              alt="Imagen de Logo Pasteleria y Decoracion" /></Link>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,16 +56,16 @@ const NavBar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="./pages/productos.html">Productos</a>
+                  <Link className="nav-link" to="/category/chocotorta">Chocotorta</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./pages/historia.html">Historia</a>
+                  <Link className="nav-link" to="/category/cheesecake">Cheesecake</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./pages/comohacerpedido.html">Como hacer mi pedido?</a>
+                  <Link className="nav-link" to="/category/lemonpie">Lemon Pie</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./pages/contacto.html">Contacto</a>
+                  <Link className="nav-link" to="/category/rogel">Rogel</Link>
                 </li>
               </ul>
             </div>
