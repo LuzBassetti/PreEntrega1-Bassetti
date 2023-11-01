@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
       const promesa = new Promise ((resolve)=>{
         setTimeout(()=>{
-            resolve(Products.find(item=> item.id === (id)))
+            resolve(Products.find(item=> item.id === parseInt(id)))
         }, 3000)
       });
       promesa.then((data)=>{
@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
     }, [id]);
   
     return (
-      <div className='ItemListContainer container'>
+      <div>
           <ItemDetail item={item}/>
       </div>
     )
